@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
+import PostingSection from "../components/PostingSection";
 
 const Homepage = () => {
   return (
     <main className="flex-1 bg-gray-100">
+      <section className="posting-section">
+        <div className="max-w-7xl mx-auto px-4 py-6 ">
+          <PostingSection />
+        </div>
+      </section>
 
       {/* 🌟 HERO SECTION */}
       <section className="bg-white border-b border-blue-200">
@@ -80,7 +86,7 @@ const Homepage = () => {
           </motion.div>
 
         </div>
-      </section>
+      </section> 
 
       {/* 📰 LATEST HEADLINES */}
       <section className="px-6 py-12 max-w-6xl mx-auto">
